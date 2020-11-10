@@ -13,7 +13,7 @@ namespace NombreCache
         static void saisie()
         {
             // saisie du premier essai
-            correct = false;
+            bool correct = false;
             while (!correct)
             {
                 try
