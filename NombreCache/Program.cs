@@ -49,6 +49,9 @@ namespace NombreCache
                     Console.WriteLine("Erreur de saisie : saisissez une nombre entier");
                 }
             }
+            
+            saisie();
+            
             Console.Clear();
             // boucle sur les essais
             while (essai != valeur)
@@ -62,6 +65,9 @@ namespace NombreCache
                 {
                     Console.WriteLine(" --> trop petit !");
                 }
+                
+                saisie();
+                
                 // compteur d'essais
                 nbre++;
             }
