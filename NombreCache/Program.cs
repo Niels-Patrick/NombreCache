@@ -9,17 +9,17 @@ namespace NombreCache
 {
     class Program
     {
-        static int essai;
-        static void saisie()
+        static int saisie()
         {
             // saisie du premier essai
+            int nombre = 0;
             bool correct = false;
             while (!correct)
             {
                 try
                 {
                     Console.Write("Entrez un essai = ");
-                    essai = int.Parse(Console.ReadLine());
+                    nombre = int.Parse(Console.ReadLine());
                     correct = true;
                 }
                 catch
@@ -27,12 +27,13 @@ namespace NombreCache
                     Console.WriteLine("Erreur de saisie : saisissez une nombre entier");
                 }
             }
+            return nombre;
         }
         static void Main(string[] args)
         {
 
             // déclaration
-            int valeur = 0, nbre = 1;
+            int valeur = 0, essai = 0, nbre = 1;
             bool correct = false;
             essai = 0;
             // saisie du nombre à chercher
